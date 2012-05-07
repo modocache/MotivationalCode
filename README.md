@@ -29,6 +29,7 @@ Some ground rules:
 - The code must function. No psuedocode.
 - Each program should be placed in its own folder in the root
   directory of the repository.
+- Or add your uplifting project as a submodule. Those rock.
 - Any language is acceptable.
 - In addition to the code, add a screenshot or snippet to the README that
   showcases the key point of your stirring script.
