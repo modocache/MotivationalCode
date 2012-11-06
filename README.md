@@ -18,6 +18,37 @@ an uplifting message.
 
 ---
 
+### Pour Some Sugar On Me
+
+![Pour Some Sugar On Me](http://f.cl.ly/items/2Q3h431S3N1t341T1b39/Screen%20Shot%202012-11-06%20at%201.42.41%20AM.png)
+
+    // PourSugarViewController.m
+    - (IBAction)onPourSomeSugarOnMeButtonTap:(UIButton *)sender {
+        [[NSDefLeppard defaultLeppard] pourSomeSugarOn:self.me];
+    }
+    
+    // NSDefLeppard.m
+    - (void)pourSomeSugarOn:(Person *)person {
+        if ([person conformsToProtocol:@protocol(TakesSugar)]) { // Do you take sugar?
+            [person prepareForSugar];
+            switch (person.sugarPreference) {
+                case SugarPreferenceOneLump: // One lump
+                    [person takeSugar:1];
+                    break;
+                case SugarPreferenceTwoLumps: // or two?
+                    [person takeSugar:2];
+                    break;
+                default:
+                    @throw [NSException exceptionWithName:NSInternalInconsistencyException
+                                                   reason:@"Do you take sugar? One lump or two?"
+                                                 userInfo:nil];
+                    break;
+            }
+        }
+    }
+
+---
+
 ### Contributing
 
 Please fork and submit a pull request with your inspirational,

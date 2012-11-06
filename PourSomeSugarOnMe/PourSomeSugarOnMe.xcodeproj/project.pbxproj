@@ -1,0 +1,334 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA7DE3C01648DD50008CF35F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7DE3BF1648DD50008CF35F /* UIKit.framework */; };
+		DA7DE3C21648DD50008CF35F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7DE3C11648DD50008CF35F /* Foundation.framework */; };
+		DA7DE3C41648DD50008CF35F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7DE3C31648DD50008CF35F /* CoreGraphics.framework */; };
+		DA7DE3CA1648DD50008CF35F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7DE3C81648DD50008CF35F /* InfoPlist.strings */; };
+		DA7DE3CC1648DD50008CF35F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7DE3CB1648DD50008CF35F /* main.m */; };
+		DA7DE3D01648DD50008CF35F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7DE3CF1648DD50008CF35F /* AppDelegate.m */; };
+		DA7DE3D21648DD50008CF35F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7DE3D11648DD50008CF35F /* Default.png */; };
+		DA7DE3D41648DD50008CF35F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7DE3D31648DD50008CF35F /* Default@2x.png */; };
+		DA7DE3D61648DD50008CF35F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7DE3D51648DD50008CF35F /* Default-568h@2x.png */; };
+		DA7DE3DF1648DD8E008CF35F /* NSDefLeppard.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7DE3DE1648DD8E008CF35F /* NSDefLeppard.m */; };
+		DA7DE3E21648DE48008CF35F /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7DE3E11648DE48008CF35F /* Person.m */; };
+		DA7DE3FC1648E07B008CF35F /* Bottle.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7DE3FB1648E07B008CF35F /* Bottle.m */; };
+		DA7DE3FF1648E134008CF35F /* Bubble.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7DE3FE1648E133008CF35F /* Bubble.m */; };
+		DA7DE4041648E33F008CF35F /* PourSugarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7DE4021648E33F008CF35F /* PourSugarViewController.m */; };
+		DA7DE4051648E33F008CF35F /* PourSugarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA7DE4031648E33F008CF35F /* PourSugarViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DA7DE3BB1648DD50008CF35F /* PourSomeSugarOnMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PourSomeSugarOnMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA7DE3BF1648DD50008CF35F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DA7DE3C11648DD50008CF35F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DA7DE3C31648DD50008CF35F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DA7DE3C71648DD50008CF35F /* PourSomeSugarOnMe-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PourSomeSugarOnMe-Info.plist"; sourceTree = "<group>"; };
+		DA7DE3C91648DD50008CF35F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA7DE3CB1648DD50008CF35F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DA7DE3CD1648DD50008CF35F /* PourSomeSugarOnMe-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PourSomeSugarOnMe-Prefix.pch"; sourceTree = "<group>"; };
+		DA7DE3CE1648DD50008CF35F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DA7DE3CF1648DD50008CF35F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DA7DE3D11648DD50008CF35F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		DA7DE3D31648DD50008CF35F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		DA7DE3D51648DD50008CF35F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DA7DE3DD1648DD8E008CF35F /* NSDefLeppard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDefLeppard.h; sourceTree = "<group>"; };
+		DA7DE3DE1648DD8E008CF35F /* NSDefLeppard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDefLeppard.m; sourceTree = "<group>"; };
+		DA7DE3E01648DE48008CF35F /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		DA7DE3E11648DE48008CF35F /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		DA7DE3F91648DFFA008CF35F /* TakesSugar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TakesSugar.h; sourceTree = "<group>"; };
+		DA7DE3FA1648E07B008CF35F /* Bottle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bottle.h; sourceTree = "<group>"; };
+		DA7DE3FB1648E07B008CF35F /* Bottle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bottle.m; sourceTree = "<group>"; };
+		DA7DE3FD1648E133008CF35F /* Bubble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bubble.h; sourceTree = "<group>"; };
+		DA7DE3FE1648E133008CF35F /* Bubble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bubble.m; sourceTree = "<group>"; };
+		DA7DE4011648E33F008CF35F /* PourSugarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PourSugarViewController.h; sourceTree = "<group>"; };
+		DA7DE4021648E33F008CF35F /* PourSugarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PourSugarViewController.m; sourceTree = "<group>"; };
+		DA7DE4031648E33F008CF35F /* PourSugarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PourSugarViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA7DE3B81648DD50008CF35F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7DE3C01648DD50008CF35F /* UIKit.framework in Frameworks */,
+				DA7DE3C21648DD50008CF35F /* Foundation.framework in Frameworks */,
+				DA7DE3C41648DD50008CF35F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA7DE3B01648DD50008CF35F = {
+			isa = PBXGroup;
+			children = (
+				DA7DE3C51648DD50008CF35F /* PourSomeSugarOnMe */,
+				DA7DE3BE1648DD50008CF35F /* Frameworks */,
+				DA7DE3BC1648DD50008CF35F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA7DE3BC1648DD50008CF35F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA7DE3BB1648DD50008CF35F /* PourSomeSugarOnMe.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA7DE3BE1648DD50008CF35F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA7DE3BF1648DD50008CF35F /* UIKit.framework */,
+				DA7DE3C11648DD50008CF35F /* Foundation.framework */,
+				DA7DE3C31648DD50008CF35F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA7DE3C51648DD50008CF35F /* PourSomeSugarOnMe */ = {
+			isa = PBXGroup;
+			children = (
+				DA7DE3CE1648DD50008CF35F /* AppDelegate.h */,
+				DA7DE3CF1648DD50008CF35F /* AppDelegate.m */,
+				DA7DE4001648E30C008CF35F /* Controllers */,
+				DA7DE3DC1648DD79008CF35F /* Models */,
+				DA7DE3C61648DD50008CF35F /* Supporting Files */,
+			);
+			path = PourSomeSugarOnMe;
+			sourceTree = "<group>";
+		};
+		DA7DE3C61648DD50008CF35F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA7DE3C71648DD50008CF35F /* PourSomeSugarOnMe-Info.plist */,
+				DA7DE3C81648DD50008CF35F /* InfoPlist.strings */,
+				DA7DE3CB1648DD50008CF35F /* main.m */,
+				DA7DE3CD1648DD50008CF35F /* PourSomeSugarOnMe-Prefix.pch */,
+				DA7DE3D11648DD50008CF35F /* Default.png */,
+				DA7DE3D31648DD50008CF35F /* Default@2x.png */,
+				DA7DE3D51648DD50008CF35F /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA7DE3DC1648DD79008CF35F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DA7DE3F91648DFFA008CF35F /* TakesSugar.h */,
+				DA7DE3DD1648DD8E008CF35F /* NSDefLeppard.h */,
+				DA7DE3DE1648DD8E008CF35F /* NSDefLeppard.m */,
+				DA7DE3E01648DE48008CF35F /* Person.h */,
+				DA7DE3E11648DE48008CF35F /* Person.m */,
+				DA7DE3FA1648E07B008CF35F /* Bottle.h */,
+				DA7DE3FB1648E07B008CF35F /* Bottle.m */,
+				DA7DE3FD1648E133008CF35F /* Bubble.h */,
+				DA7DE3FE1648E133008CF35F /* Bubble.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DA7DE4001648E30C008CF35F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DA7DE4011648E33F008CF35F /* PourSugarViewController.h */,
+				DA7DE4021648E33F008CF35F /* PourSugarViewController.m */,
+				DA7DE4031648E33F008CF35F /* PourSugarViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA7DE3BA1648DD50008CF35F /* PourSomeSugarOnMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA7DE3D91648DD50008CF35F /* Build configuration list for PBXNativeTarget "PourSomeSugarOnMe" */;
+			buildPhases = (
+				DA7DE3B71648DD50008CF35F /* Sources */,
+				DA7DE3B81648DD50008CF35F /* Frameworks */,
+				DA7DE3B91648DD50008CF35F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PourSomeSugarOnMe;
+			productName = PourSomeSugarOnMe;
+			productReference = DA7DE3BB1648DD50008CF35F /* PourSomeSugarOnMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA7DE3B21648DD50008CF35F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = modocache;
+			};
+			buildConfigurationList = DA7DE3B51648DD50008CF35F /* Build configuration list for PBXProject "PourSomeSugarOnMe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DA7DE3B01648DD50008CF35F;
+			productRefGroup = DA7DE3BC1648DD50008CF35F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA7DE3BA1648DD50008CF35F /* PourSomeSugarOnMe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA7DE3B91648DD50008CF35F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7DE3CA1648DD50008CF35F /* InfoPlist.strings in Resources */,
+				DA7DE3D21648DD50008CF35F /* Default.png in Resources */,
+				DA7DE3D41648DD50008CF35F /* Default@2x.png in Resources */,
+				DA7DE3D61648DD50008CF35F /* Default-568h@2x.png in Resources */,
+				DA7DE4051648E33F008CF35F /* PourSugarViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA7DE3B71648DD50008CF35F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7DE3CC1648DD50008CF35F /* main.m in Sources */,
+				DA7DE3D01648DD50008CF35F /* AppDelegate.m in Sources */,
+				DA7DE3DF1648DD8E008CF35F /* NSDefLeppard.m in Sources */,
+				DA7DE3E21648DE48008CF35F /* Person.m in Sources */,
+				DA7DE3FC1648E07B008CF35F /* Bottle.m in Sources */,
+				DA7DE3FF1648E134008CF35F /* Bubble.m in Sources */,
+				DA7DE4041648E33F008CF35F /* PourSugarViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DA7DE3C81648DD50008CF35F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA7DE3C91648DD50008CF35F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA7DE3D71648DD50008CF35F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA7DE3D81648DD50008CF35F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA7DE3DA1648DD50008CF35F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PourSomeSugarOnMe/PourSomeSugarOnMe-Prefix.pch";
+				INFOPLIST_FILE = "PourSomeSugarOnMe/PourSomeSugarOnMe-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DA7DE3DB1648DD50008CF35F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PourSomeSugarOnMe/PourSomeSugarOnMe-Prefix.pch";
+				INFOPLIST_FILE = "PourSomeSugarOnMe/PourSomeSugarOnMe-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA7DE3B51648DD50008CF35F /* Build configuration list for PBXProject "PourSomeSugarOnMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA7DE3D71648DD50008CF35F /* Debug */,
+				DA7DE3D81648DD50008CF35F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA7DE3D91648DD50008CF35F /* Build configuration list for PBXNativeTarget "PourSomeSugarOnMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA7DE3DA1648DD50008CF35F /* Debug */,
+				DA7DE3DB1648DD50008CF35F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA7DE3B21648DD50008CF35F /* Project object */;
+}
