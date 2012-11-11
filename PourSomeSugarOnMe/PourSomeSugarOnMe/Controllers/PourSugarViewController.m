@@ -27,11 +27,15 @@
 #import "Person.h"
 
 
-@interface PourSugarViewController ()
+static NSString * const kPourSugarViewSliderValueStateKey = @"PourSugarViewSliderValueStateKey";
+
+
+@interface PourSugarViewController () <UIViewControllerRestoration>
 @property (nonatomic, strong) Person *me;
 @property (nonatomic, assign) NSUInteger numberOfLumps;
 @property (nonatomic, weak) IBOutlet UILabel *numberOfLumpsLabel;
 @property (nonatomic, weak) IBOutlet UISlider *slider;
+- (void)setupRestoration;
 - (IBAction)onSliderValueChanged:(UISlider *)sender;
 - (IBAction)onPourSomeSugarOnMeButtonTap:(UIButton *)sender;
 @end
@@ -47,11 +51,51 @@
     if (self) {
         _me = [Person new];
     }
+
+    [self setupRestoration];
     return self;
+}
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    [self setupRestoration];
+}
+
+
+#pragma mark - UIViewController Overrides
+
+- (void)encodeRestorableStateWithCoder:(NSCoder *)coder {
+    [coder encodeFloat:self.slider.value forKey:kPourSugarViewSliderValueStateKey];
+    [super encodeRestorableStateWithCoder:coder];
+}
+
+- (void)decodeRestorableStateWithCoder:(NSCoder *)coder {
+    self.slider.value = [coder decodeFloatForKey:kPourSugarViewSliderValueStateKey];
+    [self.slider sendActionsForControlEvents:UIControlEventValueChanged];
+    [super decodeRestorableStateWithCoder:coder];
+}
+
+
+#pragma mark - UIViewControllerRestoration Protcol Methods
+
++ (UIViewController *)viewControllerWithRestorationIdentifierPath:(NSArray *)identifierComponents
+                                                            coder:(NSCoder *)coder {
+    PourSugarViewController *viewController = nil;
+    float sliderValue = [coder decodeFloatForKey:kPourSugarViewSliderValueStateKey];
+    if (sliderValue > 0.0f) {
+        viewController = [PourSugarViewController new];
+        viewController.slider.value = sliderValue;
+    }
+    return viewController;
 }
 
 
 #pragma mark - Internal Methods
+
+- (void)setupRestoration {
+    self.restorationIdentifier = NSStringFromClass([self class]);
+    self.restorationClass = [self class];
+}
 
 - (void)setNumberOfLumps:(NSUInteger)numberOfLumps {
     _numberOfLumps = numberOfLumps;

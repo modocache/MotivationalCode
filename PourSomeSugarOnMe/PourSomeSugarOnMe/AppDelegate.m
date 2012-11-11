@@ -26,17 +26,64 @@
 #import "PourSugarViewController.h"
 
 
+static NSString * const kAppDelegateRootViewControllerStateKey = @"AppDelegateRootViewControllerStateKey";
+
+
+@interface AppDelegate ()
+- (UIWindow *)buildWindow;
+- (void)initializeApplication:(NSDictionary *)launchOptions;
+@end
+
+
 @implementation AppDelegate
 
 
 #pragma mark - UIApplicationDelegate Protocol Methods
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
-    self.window.rootViewController = [PourSugarViewController new];
+    [self initializeApplication:launchOptions];
     return YES;
+}
+
+- (void)application:(UIApplication *)application willEncodeRestorableStateWithCoder:(NSCoder *)coder {
+    [coder encodeObject:self.window.rootViewController forKey:kAppDelegateRootViewControllerStateKey];
+}
+
+- (void)application:(UIApplication *)application didDecodeRestorableStateWithCoder:(NSCoder *)coder {
+    UIViewController *viewController = [coder decodeObjectForKey:kAppDelegateRootViewControllerStateKey];
+    if (viewController) {
+        self.window = [self buildWindow];
+        self.window.rootViewController = viewController;
+        [self.window makeKeyAndVisible];
+    }
+}
+
+- (BOOL)application:(UIApplication *)application shouldRestoreApplicationState:(NSCoder *)coder {
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)application shouldSaveApplicationState:(NSCoder *)coder {
+    return YES;
+}
+
+
+#pragma mark - Internal Methods
+
+- (UIWindow *)buildWindow {
+    UIWindow *window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    window.restorationIdentifier = NSStringFromClass([self.window class]);
+    return window;
+}
+
+- (void)initializeApplication:(NSDictionary *)launchOptions {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        if (!self.window) {
+            self.window = [self buildWindow];
+            self.window.rootViewController = [PourSugarViewController new];
+            [self.window makeKeyAndVisible];
+        }
+    });
 }
 
 @end
